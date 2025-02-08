@@ -65,24 +65,19 @@ $(document).ready(function() {
     });
 
   //contact form to excel sheet
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyHxadBUKoQzXf3TKoT5wdVGeSqjsQQ88np9MchhRLtdB4N1dqHWhjhYruG48bRtKJEcg/exec'
-  const form = document.forms['submitToGoogleSheet']
-  const msg = document.getElementById("msg")
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzu68qQSbqYm9lDiP_1opduyRAkyUtJtPg0lXpKaZFTsdOvFAyW9SPq0omTNPlEFQBqFQ/exec'
 
-  form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => {
-              msg.innerHTML = "Message sent successfully"
-              setTimeout(function () {
-                  msg.innerHTML = ""
-              }, 5000)
-              form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-  })
-    
-  });
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
   
   function updateActiveSection() {
     var scrollPosition = $(window).scrollTop();
