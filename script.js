@@ -67,7 +67,7 @@ $(document).ready(function() {
   //contact form to excel sheet
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzu68qQSbqYm9lDiP_1opduyRAkyUtJtPg0lXpKaZFTsdOvFAyW9SPq0omTNPlEFQBqFQ/exec'
 
-const form = document.forms['contact-form']
+const form = document.forms['submitToGoogleSheet']
 
 form.addEventListener('submit', e => {
   
