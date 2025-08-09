@@ -1,535 +1,279 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amrit Khanal — Portfolio</title>
+  <meta name="description" content="Amrit Khanal — Student • Web Dev • Football enthusiast" />
+  <meta name="keywords" content="Amrit Khanal, portfolio, web developer, student, football, photography" />
+  <meta name="author" content="Amrit Khanal" />
+  <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png" />
+  <meta property="og:title" content="Amrit Khanal — Portfolio" />
+  <meta property="og:description" content="Student | Web Dev | Football & Gaming Enthusiast" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amritkhanal10.com.np/" />
+  <meta name="theme-color" content="#0b1220" />
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-}
-a{
-  text-decoration: none ;
-  color:#fff;
-  transition:0.3s; 
-}
-ul{
-  list-style:none;
-}
-img{
-  max-width: 100%;
-}
-body{
-  font-family: 'Lexend', sans-serif;
-  font-size:16px;
-  line-height:24px; 
-  background-color:#202020;
-}
-.container{
-  width: 1170px;
-  margin:auto;
-}
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader">AK</div>
+  </div>
 
+  <div class="wrap" id="top">
+    <header role="banner" aria-label="Main header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AK</div>
+        <div>
+          <div style="font-weight:700">Amrit Khanal</div>
+          <div style="font-size:12px;color:var(--muted)">Student • Web Dev • Football</div>
+        </div>
+      </div>
 
+      <nav role="navigation" aria-label="Primary navigation">
+        <a href="#home" class="navlink active">Home</a>
+        <a href="#about" class="navlink">About</a>
+        <a href="#education" class="navlink">Education</a>
+        <a href="#projects" class="navlink">Skills</a>
+        <a href="#contact" class="navlink">Contact</a>
+      </nav>
 
+      <div class="controls" role="toolbar" aria-label="Site controls">
+        <button id="themeToggle" class="btn ghost" title="Toggle theme"><i class="fa fa-moon"></i></button>
+        <button id="resumeDownload" class="btn primary" title="Download resume"><i class="fa fa-download" style="margin-right:8px"></i>Resume</button>
+      </div>
+    </header>
 
-      /*---------------------------Header---------------------------*/
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Home">
+      <div class="card intro">
+        <div style="display:flex;gap:12px;align-items:center;justify-content:space-between">
+          <div>
+            <h5 style="margin:0;color:var(--muted)">Hi — I'm</h5>
+            <h1>Amrit <span style="color:var(--accent)">Khanal</span></h1>
+            <h3 style="margin:6px 0 0;color:var(--muted)">A <span class="typing" aria-live="polite"></span></h3>
+            <p style="margin-top:12px;color:var(--muted)">From Diktel, Khotang. Student, web development enthusiast, football lover, gamer, and creative writer. I enjoy building things on the web and learning every day.</p>
+          </div>
 
-.header-area{
-  padding:25px 0;
-  transition: padding .3s;
-}
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+            <div class="stats">
+              <div class="stat"><strong id="counterExp">0</strong><span>Months Coding</span></div>
+              <div class="stat"><strong id="counterProjects">0</strong><span>Projects</span></div>
+            </div>
+            <div style="margin-top:8px">
+              <div class="cta">
+                <button class="btn primary" id="btnWork">See Work</button>
+                <a href="mailto:amritkhanal091@gmail.com" class="btn ghost">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-.header-area.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: #202020;
-  padding: 5px;
-}
+        <!-- quick social -->
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center">
+          <a class="link" href="mailto:Amritkhanal091@gmail.com"><i class="fa fa-envelope"></i></a>
+          <a class="link" href="https://www.facebook.com/amrit.khanal.3910"><i class="fab fa-facebook"></i></a>
+          <a class="link" href="https://www.instagram.com/amrit_khanal1"><i class="fab fa-instagram"></i></a>
+          <a class="link" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
 
-.header{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  /* padding-bottom: 2rem; */
-} 
-.logo {
-  display: flex;
-  align-items: center;
-  position: relative; 
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 700;
-}
+      <aside class="card profile" aria-label="Profile card">
+        <div class="avatar" id="avatarWrap" title="Amrit">
+          <!-- replace src with your real image -->
+          <img alt="Amrit Khanal" id="avatar" src="Amrit!!.png" loading="lazy" />
+        </div>
+        <div>
+          <div style="font-weight:700">Amrit Khanal</div>
+          <div class="meta">+2 Computer Science • Koshi Pradesh</div>
+        </div>
+        <div class="muted" style="font-size:13px">Open to internships & collaborations</div>
 
-.logo .fa-bolt {
-  color: #fed700;
-  font-size: 19.5px;
-  position: absolute; 
-  top: 60%;
-  left: 100%; 
-  transform: translate(-50%, -50%); 
-  z-index: 1; 
-}
+        <div style="width:100%;margin-top:10px;display:flex;gap:8px;justify-content:center">
+          <button class="btn ghost" id="contactTop">Contact</button>
+          <button class="btn primary" id="projectsTop">Skills</button>
+        </div>
+      </aside>
+    </section>
 
-.signature {
-  width: 100px; 
-  height:auto; 
-  margin-right: 10px; 
-}
+    <!-- ABOUT -->
+    <section id="about" class="card" aria-labelledby="about-title">
+      <h3 id="about-title" style="margin:0 0 8px;color:var(--accent)">About Me</h3>
+      <div class="two-col">
+        <div>
+          <p class="muted">I am a +2 Computer Science student from Diktel, Khotang. I love football (Real Madrid fan), competitive gaming, photography, and building web projects. I enjoy taking on new learning challenges and contributing to small open-source work.</p>
 
-.header ul li:first-child {
-  margin-right: auto; 
-}  
+          <ul class="about-list" style="margin-top:12px">
+            <li><strong>Problem solving</strong> — solving algorithmic problems and building small utilities.</li>
+            <li><strong>Web fundamentals</strong> — HTML, CSS, JS; exploring React & modern workflows.</li>
+            <li><strong>Curiosity</strong> — travel, culture, creative writing, and design basics.</li>
+          </ul>
+        </div>
 
-.header ul{
-  display: flex;
-  align-items: center; 
-}
-.header ul li{
-  margin: 0 15px;
-}
-.header ul li a{
-  text-transform: capitalize;
-  display: block;
-}
-.header ul li a.active{
-  color: #fed700;
-} 
-.header ul li a:hover{
-  color:#fed700;
-}
-.header .menu_icon{
-  color:#fff;
-  font-size: 18px;
-  cursor: pointer;
-  display: none;
-}
+        <aside>
+          <div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:12px">
+            <div class="card" style="padding:12px;border-radius:10px;min-width:120px;text-align:center">
+              <strong id="years">0</strong><div class="muted" style="font-size:13px">Years</div>
+            </div>
+            <div class="card" style="padding:12px;border-radius:10px;min-width:120px;text-align:center">
+              <strong id="projectsCount">0</strong><div class="muted" style="font-size:13px">Projects</div>
+            </div>
+          </div>
 
+          <h4 style="margin:12px 0 6px">Skills</h4>
+          <div class="skills">
+            <div class="skill">
+              <div class="label"><span>HTML & CSS</span><span class="muted">92%</span></div>
+              <div class="bar"><i data-width="92%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>JavaScript</span><span class="muted">86%</span></div>
+              <div class="bar"><i data-width="86%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>React / TS (learning)</span><span class="muted">72%</span></div>
+              <div class="bar"><i data-width="72%"></i></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-/*---------------------------HomePage--------------------------*/
+    <!-- EDUCATION -->
+    <section id="education" class="card" aria-labelledby="edu-title">
+      <h3 id="edu-title" style="margin:0 0 10px;color:var(--accent)">Education & Hobbies</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>S.E.E — Shree Saraswati Secondary Model School</h4>
+            <p class="muted">Completed in 2022 — foundation years</p>
+          </div>
+          <div class="timeline-item">
+            <h4>+2 — Shikshadeep College</h4>
+            <p class="muted">2024 — Computer Science</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Bachelor (planned)</h4>
+            <p class="muted">Acme Engineering College — 2025 onward</p>
+          </div>
+        </div>
 
-.FirstElement{
-   display:flex;
-   justify-content: space-around;
-   align-items: center;
-   padding-top: 5rem; 
-} 
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Gaming</h4>
+            <p class="muted">Precision, strategy & adaptability — I enjoy competitive games.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Sports — Football</h4>
+            <p class="muted">Dribbling, teamwork & tactical awareness — big Real Madrid fan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.FirstElement.adjusted-padding {
-  padding-top: 40px; 
-}
+    <!-- PROJECTS / SKILLS -->
+    <section id="projects" class="card" aria-labelledby="proj-title">
+      <h3 id="proj-title" style="margin:0 0 12px;color:var(--accent)">My Skills</h3>
 
-.FirstElement .profile-photo{
-  width: 300px;
-  height:  300px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 15px solid #444444;
-  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
-}
-profile-photo .img{
-  height: 100%;
-  width: 100%;
-  transition: 0.5s;
-}
-.FirstElement .profile-photo img:hover{
-  transform: scale(1.2);
-}
-.profile-text{
-  max-width: 750px;
-  display: flex;
-  flex-direction: column;
-}
-.profile-text h5{
-  color: #e5e5e5;
-  font-size: 14px;
-}
-.profile-text h1{
-  color: #fed700;
-  font-size: 3rem; 
-}
-.profile-text p{
-  color:#e5e5e5;
-}
-.profile-text .social i{
-  color : #e5e5e5;
-  font-size: 18px;
-  margin-right: 10px;
-  transition: 0.5s;
-}
-.profile-text .social i:hover{
-  color:#fed700;
-  transform: rotate(360deg);
-}
+      <div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;align-items:center">
+        <input id="projectSearch" placeholder="Search skill or project..." style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)">
+        <div style="margin-left:auto;display:flex;gap:8px">
+          <button class="btn ghost" data-filter="all">All</button>
+          <button class="btn ghost" data-filter="web">Web</button>
+          <button class="btn ghost" data-filter="design">Design</button>
+          <button class="btn ghost" data-filter="sports">Sports</button>
+        </div>
+      </div>
 
+      <div class="projects-grid" id="projectsGrid">
+        <!-- card 1 -->
+        <div class="project-card" data-tags="sports football" tabindex="0" data-title="Football" data-desc="Dribbling, Passing, Shooting, and Tactical awareness that players develop to excel on the field.">
+          <i class="fa fa-futbol" style="background:var(--accent);width:44px;height:44px;display:grid;place-items:center;border-radius:10px;color:#041827"></i>
+          <h4>Football</h4>
+          <p class="muted">Tactical awareness, teamwork and skill development on the field.</p>
+          <div class="project-tags"><span class="tag">sports</span><span class="tag">team</span></div>
+        </div>
 
+        <!-- card 2 -->
+        <div class="project-card" data-tags="design photography" tabindex="0" data-title="Photography" data-desc="Exploring framing, perspectives and moments — capturing snippets of life through the lens.">
+          <i class="fa fa-camera" style="background:var(--accent);width:44px;height:44px;display:grid;place-items:center;border-radius:10px;color:#041827"></i>
+          <h4>Photography</h4>
+          <p class="muted">Capturing moments, experimenting with composition & perspective.</p>
+          <div class="project-tags"><span class="tag">photography</span><span class="tag">design</span></div>
+        </div>
 
- /*---------------------------About---------------------------*/
+        <!-- card 3 -->
+        <div class="project-card" data-tags="web code" tabindex="0" data-title="Computer Science" data-desc="Basics of C language, HTML, CSS, JavaScript — exploring frameworks and networking concepts.">
+          <i class="fa fa-desktop" style="background:var(--accent);width:44px;height:44px;display:grid;place-items:center;border-radius:10px;color:#041827"></i>
+          <h4>Computer Science</h4>
+          <p class="muted">C, JS, HTML & CSS basics. Exploring React and networking topics.</p>
+          <div class="project-tags"><span class="tag">web</span><span class="tag">code</span></div>
+        </div>
+      </div>
+    </section>
 
-.about-area{
-  padding-top: 130px;
-  background-color: #202020;
-}
-.about{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom:50px;
-}
-.about-content{
-  flex-basis: 60%;
-}
-.about-content h4{
-  color: #fed700;
-  font-size: 40px;
-  line-height: 70px;
-  text-transform: capitalize;
-}
-.about-content ul {
-  color:#fff;
-  text-align: justify;
-}
+    <!-- Contact -->
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h3 id="contact-title" style="margin:0 0 10px;color:var(--accent)">Contact Me</h3>
+      <p class="muted">Want to collaborate? Send a message — the form will submit to Google Sheets using a script.</p>
 
-.about-content ul li {
-  list-style-type: disc;
-  margin-bottom: 10px;
-}
+      <div style="display:grid;gap:12px;max-width:900px">
+        <form name="submitToGoogleSheet" id="contactForm">
+          <div class="row">
+            <input type="text" name="NAME" placeholder="Name" required>
+            <input type="email" name="EMAIL" placeholder="Email" required>
+          </div>
+          <input type="text" name="SUBJECT" placeholder="Subject">
+          <textarea name="MESSAGE" placeholder="Message" required></textarea>
 
-.about-skills{
-  flex-basis: 35%;
-}
-.about-skills ul li{
-  border-bottom: 1px dashed #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 18px;
-}
-.about-skills ul li:last-child{
-  border-bottom: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
+          <div style="display:flex;gap:8px;align-items:center">
+            <button type="submit" class="btn primary">Send Message</button>
+            <div class="form-note muted" id="formStatus" role="status" aria-live="polite"></div>
+          </div>
+        </form>
 
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="flex:1;min-width:220px" class="card">
+            <strong>Email</strong><div class="muted">Amritkhanal091@gmail.com</div>
+          </div>
+          <div style="flex:1;min-width:220px" class="card">
+            <strong>Location</strong><div class="muted">Diktel, Khotang, Nepal</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/*---------------------------Button---------------------------*/
+    <!-- Footer -->
+    <footer class="card center" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="muted">© <span id="year"></span> Amrit Khanal — Built with ❤️</div>
+      <div class="muted">Made with HTML • CSS • JS</div>
+    </footer>
+  </div>
 
-.btn-group{
-  margin: 45px 0;
-}
-.btn-group .btn{
-  border-color: #d5d5d5;
-  color: #fff;
-  background-color: #333;
-  padding:12px 25px;
-  margin: 5px 0;
-  margin-right: 7px;
-  border-radius: 30px;
-  border: 2px solid #e5e5e5;
-  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
-}
-.btn.active{
-  border-color: #fed700;
-}
+  <!-- Modal for project details -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="inner">
+      <button id="closeModal" style="float:right;background:transparent;border:0;font-size:18px;cursor:pointer"><i class="fa fa-times"></i></button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc" class="muted"></p>
+      <div style="margin-top:12px">
+        <button id="modalVisit" class="btn primary" style="display:none">Visit</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- Floating actions -->
+  <div class="fab" aria-hidden="false">
+    <a href="mailto:Amritkhanal091@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+    <a id="whatsappQuick" href="https://wa.me/977" title="WhatsApp"><i class="fa fa-comment"></i></a>
+    <div class="backtop" id="backTop" title="Back to top"><i class="fa fa-arrow-up"></i></div>
+  </div>
 
-/*---------------------------Education & Internship---------------------------*/
-
-.education-content .row{
-  display: flex;
-  border-radius: 5px;
-  height: 400px;
-  margin-bottom: 250px;
-}
-
-.education-content .title{
-  color: #fed700;
-}
-.education-content .row .education,
-.education-content .row .internship
-{
-  color: #e5e5e5;
-  flex:0 0 50%;
-  max-width: 50%;
-  margin-top: 30px;
-} 
-.education-content  h3.title{
-  font-size:24px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-.education-content .row.timeline-box{
-  flex:0 0 100%;
-  max-width: 100%;  
-}
-.education-content .row .timeline{
-  /* background-color:#e5e5e5; */
-  padding: 30px 15px;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-}
-.education-content .row .timeline-item{
-  position:relative;
-  padding-left: 37px;
-  padding-bottom: 50px; 
-}
-.education-content .row  .internship .timeline-item{
-  position:relative;
-  padding-left: 37px;
-  padding-bottom: 30px; 
-}
-.education-content .row .timeline-item:last-child{
-  padding-bottom: 0;
-}
-.education-content .row .timeline-item::before{
-  content: "";
-  width: 1px;
-  position: absolute;
-  height: 100%;
-  left: 7px;
-  top: 0;
-  background-color: #fed700;  
-}
-.education-content .row .circle-dot{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: #e5e5e5;
-}
-.education-content .row .timeline-title  {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-.education-content .row .internship .timeline-title  {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-.education-content .row .timeline-text{
-  line-height: 25px;
-  font-size: 16px;
-  text-align: justify;
-}
-
-
-
-/*---------------------------Projects---------------------------*/
-.project-content{
-  padding: 90px 0;
-  /* color:#fff;  */
-}
-.project-title{
-  margin-bottom: 60px;
-  text-align: center;
-}
-.project-title h4{
-  text-transform: uppercase;
-  font-size: 40px;
-  line-height: 40px;
-  color: #fed700;
-  margin-bottom: 20px;
-}
-.project-title p{
-  color: #e5e5e5;
-}
-.projects{
-  display: flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
-}
-.project{
-    /* padding: 30px 15px; */
-    color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    padding: 25px;
-    text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
-}
-.project i{
-  background-color: #fed700;
-  width: 60px;
-  height: 60px;
-  color: #333;
-  font-size: 26px;
-  line-height: 60px;
-  border-radius: 50%;
-}
-.project h4{
-  font-size: 26px;
-  text-transform: capitalize;
-  margin: 20px 0;
-}
-.project p{
-  text-align: justify;
-}
-.project:hover{
-  border-color: #fed700;
-}
-
-
-
-/*---------------------------Contact Me---------------------------*/
-.contact-content{
-  padding: 100px 0;
-  color: #fff;
-  text-align: center;
-}
-.contact-content .contact-title h4{
-  font-size: 40px;
-  text-transform: capitalize;
-  color: #fed700;
-  padding-bottom: 10px;
-}
-.contact-content .contact-title p{
-  padding-bottom: 20px;
-}
-.contact{
-  max-width: 700px;
-  margin: auto;
-}
-.contact input,.contact textarea{
-  width: 100%;
-  padding: 15px;
-  border: 0;
-  margin-bottom: 10px;
-}
-
-.contact .submit{
-  width: auto;
-  background-color: #fed700;
-  padding: 10px 40px;
-  font-weight:bold ;
-  font-size: 18px;
-}
-.contact .submit:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
-#msg{
-  color: #fff;
-  font-size: 20px;
-  margin-top: -8px;
-  display: block;
-}
-
-
-
-
-
-
-/*---------------------------Footer---------------------------*/
-.footer {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 15px 0 26px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); 
-    color: rgba(255, 255, 255, 0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer .message {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.4);
-    margin-bottom: 10px;
-  }
-  
-  .copyright {
-    font-size: 12px;
-  }
-
-
-
-
- /*------------------- Responsive Design on small screen -------------------*/
-
-/* Medium layout */
-@media only screen and (min-width:1000px) and (max-width:1200px){
-  .container{
-    width: 970px;
-  }
-}
-
-@media(max-width:1050px){
-  .FirstElement{ 
-    flex-direction: column;
-    padding-top: 2rem;
-  }
-  .profile-text{
-    padding: 40px 0px;
-  }
-}
-
-
-
-/* tablet layout */
-@media only screen and (min-width:768px) and (max-width:999px){
-  .container{
-    width: 750px;
-  } 
-}  
-
-
-/* Mobile Layout */
-@media only screen and (max-width:767px){
-  .container{
-    width: 350px;
-  }
-
-  .header .menu_icon {
-    display: block;
-  }
-  .header ul{
-    display: none;
-  }
-  .header i{
-    color: #e5e5e5;
-  }
-
-  .profile-text{
-    width: 350px;
-  }
-  .FirstElement .profile-text p{
-    text-align: justify;
-  }
-  .about{
-    flex-direction: column;
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-  .about-skills{
-    width: 100%;
-    margin-top: 30px;
-  }
-  .education-content .row {
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 50px;
-  }
-
-  .education-content .row .education,
-  .education-content .row .internship {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin-top: 30px;
-  }
-  .project{
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-
-}
-
+  <script src="script.js"></script>
+</body>
+</html>
