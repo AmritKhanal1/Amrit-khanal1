@@ -1,322 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-      <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Add these meta tags in the head section of your HTML document -->
-<head>
-    <meta name="description" content="Amrit Khanal Personal Portfolio">
-    <meta name="keywords" content="Amrit Khanal, amrit khanal, amrit">
-    <meta name="robots" content="index, follow">
-    <!-- Other meta tags as needed -->
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://amritkhanal10.com.np/">
-</head>
-  
-    <title>Amrit</title>
-    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
-
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
-    
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126939217-2');
-  </script>
-    <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amrit Khanal — Portfolio</title>
+  <meta name="description" content="Amrit Khanal — Student • Web Dev • Football enthusiast" />
+  <meta name="keywords" content="Amrit Khanal, portfolio, web developer, student, football, photography" />
+  <meta name="author" content="Amrit Khanal" />
+  <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png" />
+  <meta property="og:title" content="Amrit Khanal — Portfolio" />
+  <meta property="og:description" content="Student | Web Dev | Football & Gaming Enthusiast" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Amrit Khanal" />
-  <meta property="og:description" content="Student" />
   <meta property="og:url" content="https://amritkhanal10.com.np/" />
-  <meta property="og:site_name" content="Amrit Khanal" />
-  
-    <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-</head> 
+  <meta name="theme-color" content="#0b1220" />
 
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
- <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-    <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-               
-                <a href="" class="logo">
-                    <img src="signaturecropped.png" alt="" class="signature">
-                    <i class="fa fa-bolt"></i>
-                </a>
-                   
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader">AK</div>
+  </div>
 
-            </div>
-        </div> 
+  <div class="wrap" id="top">
+    <header role="banner" aria-label="Main header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AK</div>
+        <div>
+          <div style="font-weight:700">Amrit Khanal</div>
+          <div style="font-size:12px;color:var(--muted)">Student • Web Dev • Football</div>
+        </div>
+      </div>
+
+      <nav role="navigation" aria-label="Primary navigation">
+        <a href="#home" class="navlink active">Home</a>
+        <a href="#about" class="navlink">About</a>
+        <a href="#education" class="navlink">Education</a>
+        <a href="#projects" class="navlink">Skills</a>
+        <a href="#contact" class="navlink">Contact</a>
+      </nav>
+
+      <div class="controls" role="toolbar" aria-label="Site controls">
+        <button id="themeToggle" class="btn ghost" title="Toggle theme"><i class="fa fa-moon"></i></button>
+        <button id="resumeDownload" class="btn primary" title="Download resume"><i class="fa fa-download" style="margin-right:8px"></i>Resume</button>
+      </div>
     </header>
- 
-    <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="Amrit!!.png" alt="profile picture">
-        </div>
-        <div class="profile-text">
-            <h5>Hi I'm </h5><br>
-            <h1>Amrit</h1><br>
-                          <h3 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h3>
-            <p>Hi, I’m Amrit Khanal from Diktel, Khotang. I’m passionate about football, esports, and exploring new places. I have skills in web development and enjoy creative writing as a way to express myself. I’m always eager to learn and grow through new experiences and challenges.</p>
-            
-            <div class="btn-group">
-                <a href="files/AmritResume.pdf" class="btn   active">Download CV</a>
-                <a href="mailto:amritkhanal091@gmail.com" class="btn">Contact</a>
-            </div>
 
-            <div class="social">
-                <a href="mailto:Amritkhanal091@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.facebook.com/amrit.khanal.3910?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://https://www.instagram.com/amrit_khanal1?igsh=MWxvY3JxeGZyMGcycw=="><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Home">
+      <div class="card intro">
+        <div style="display:flex;gap:12px;align-items:center;justify-content:space-between">
+          <div>
+            <h5 style="margin:0;color:var(--muted)">Hi — I'm</h5>
+            <h1>Amrit <span style="color:var(--accent)">Khanal</span></h1>
+            <h3 style="margin:6px 0 0;color:var(--muted)">A <span class="typing" aria-live="polite"></span></h3>
+            <p style="margin-top:12px;color:var(--muted)">From Diktel, Khotang. Student, web development enthusiast, football lover, gamer, and creative writer. I enjoy building things on the web and learning every day.</p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+            <div class="stats">
+              <div class="stat"><strong id="counterExp">0</strong><span>Months Coding</span></div>
+              <div class="stat"><strong id="counterProjects">0</strong><span>Projects</span></div>
             </div>
+            <div style="margin-top:8px">
+              <div class="cta">
+                <button class="btn primary" id="btnWork">See Work</button>
+                <a href="mailto:amritkhanal091@gmail.com" class="btn ghost">Contact</a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- quick social -->
+        <div style="margin-top:14px;display:flex;gap:8px;align-items:center">
+          <a class="link" href="mailto:Amritkhanal091@gmail.com"><i class="fa fa-envelope"></i></a>
+          <a class="link" href="https://www.facebook.com/amrit.khanal.3910"><i class="fab fa-facebook"></i></a>
+          <a class="link" href="https://www.instagram.com/amrit_khanal1"><i class="fab fa-instagram"></i></a>
+          <a class="link" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <aside class="card profile" aria-label="Profile card">
+        <div class="avatar" id="avatarWrap" title="Amrit">
+          <!-- replace src with your real image -->
+          <img alt="Amrit Khanal" id="avatar" src="Amrit!!.png" loading="lazy" />
+        </div>
+        <div>
+          <div style="font-weight:700">Amrit Khanal</div>
+          <div class="meta">+2 Computer Science • Koshi Pradesh</div>
+        </div>
+        <div class="muted" style="font-size:13px">Open to internships & collaborations</div>
+
+        <div style="width:100%;margin-top:10px;display:flex;gap:8px;justify-content:center">
+          <button class="btn ghost" id="contactTop">Contact</button>
+          <button class="btn primary" id="projectsTop">Skills</button>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card" aria-labelledby="about-title">
+      <h3 id="about-title" style="margin:0 0 8px;color:var(--accent)">About Me</h3>
+      <div class="two-col">
+        <div>
+          <p class="muted">I am a +2 Computer Science student from Diktel, Khotang. I love football (Real Madrid fan), competitive gaming, photography, and building web projects. I enjoy taking on new learning challenges and contributing to small open-source work.</p>
+
+          <ul class="about-list" style="margin-top:12px">
+            <li><strong>Problem solving</strong> — solving algorithmic problems and building small utilities.</li>
+            <li><strong>Web fundamentals</strong> — HTML, CSS, JS; exploring React & modern workflows.</li>
+            <li><strong>Curiosity</strong> — travel, culture, creative writing, and design basics.</li>
+          </ul>
+        </div>
+
+        <aside>
+          <div style="display:flex;justify-content:space-between;gap:8px;margin-bottom:12px">
+            <div class="card" style="padding:12px;border-radius:10px;min-width:120px;text-align:center">
+              <strong id="years">0</strong><div class="muted" style="font-size:13px">Years</div>
+            </div>
+            <div class="card" style="padding:12px;border-radius:10px;min-width:120px;text-align:center">
+              <strong id="projectsCount">0</strong><div class="muted" style="font-size:13px">Projects</div>
+            </div>
+          </div>
+
+          <h4 style="margin:12px 0 6px">Skills</h4>
+          <div class="skills">
+            <div class="skill">
+              <div class="label"><span>HTML & CSS</span><span class="muted">92%</span></div>
+              <div class="bar"><i data-width="92%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>JavaScript</span><span class="muted">86%</span></div>
+              <div class="bar"><i data-width="86%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>React / TS (learning)</span><span class="muted">72%</span></div>
+              <div class="bar"><i data-width="72%"></i></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="card" aria-labelledby="edu-title">
+      <h3 id="edu-title" style="margin:0 0 10px;color:var(--accent)">Education & Hobbies</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>S.E.E — Shree Saraswati Secondary Model School</h4>
+            <p class="muted">Completed in 2022 — foundation years</p>
+          </div>
+          <div class="timeline-item">
+            <h4>+2 — Shikshadeep College</h4>
+            <p class="muted">2024 — Computer Science</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Bachelor (planned)</h4>
+            <p class="muted">Acme Engineering College — 2025 onward</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Gaming</h4>
+            <p class="muted">Precision, strategy & adaptability — I enjoy competitive games.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Sports — Football</h4>
+            <p class="muted">Dribbling, teamwork & tactical awareness — big Real Madrid fan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / SKILLS -->
+    <section id="projects" class="card" aria-labelledby="proj-title">
+      <h3 id="proj-title" style="margin:0 0 12px;color:var(--accent)">My Skills</h3>
+
+      <div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;align-items:center">
+        <input id="projectSearch" placeholder="Search skill or project..." style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)">
+        <div style="margin-left:auto;display:flex;gap:8px">
+          <button class="btn ghost" data-filter="all">All</button>
+          <button class="btn ghost" data-filter="web">Web</button>
+          <button class="btn ghost" data-filter="design">Design</button>
+          <button class="btn ghost" data-filter="sports">Sports</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- card 1 -->
+        <div class="project-card" data-tags="sports football" tabindex="0" data-title="Football" data-desc="Dribbling, Passing, Shooting, and Tactical awareness that players develop to excel on the field.">
+          <i class="fa fa-futbol" style="background:var(--accent);width:44px;height:44px;display:grid;place-items:center;border-radius:10px;color:#041827"></i>
+          <h4>Football</h4>
+          <p class="muted">Tactical awareness, teamwork and skill development on the field.</p>
+          <div class="project-tags"><span class="tag">sports</span><span class="tag">team</span></div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="project-card" data-tags="design photography" tabindex="0" data-title="Photography" data-desc="Exploring framing, perspectives and moments — capturing snippets of life through the lens.">
+          <i class="fa fa-camera" style="background:var(--accent);width:44px;height:44px;display:grid;place-items:center;border-radius:10px;color:#041827"></i>
+          <h4>Photography</h4>
+          <p class="muted">Capturing moments, experimenting with composition & perspective.</p>
+          <div class="project-tags"><span class="tag">photography</span><span class="tag">design</span></div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="project-card" data-tags="web code" tabindex="0" data-title="Computer Science" data-desc="Basics of C language, HTML, CSS, JavaScript — exploring frameworks and networking concepts.">
+          <i class="fa fa-desktop" style="background:var(--accent);width:44px;height:44px;display:grid;place-items:center;border-radius:10px;color:#041827"></i>
+          <h4>Computer Science</h4>
+          <p class="muted">C, JS, HTML & CSS basics. Exploring React and networking topics.</p>
+          <div class="project-tags"><span class="tag">web</span><span class="tag">code</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h3 id="contact-title" style="margin:0 0 10px;color:var(--accent)">Contact Me</h3>
+      <p class="muted">Want to collaborate? Send a message — the form will submit to Google Sheets using a script.</p>
+
+      <div style="display:grid;gap:12px;max-width:900px">
+        <form name="submitToGoogleSheet" id="contactForm">
+          <div class="row">
+            <input type="text" name="NAME" placeholder="Name" required>
+            <input type="email" name="EMAIL" placeholder="Email" required>
+          </div>
+          <input type="text" name="SUBJECT" placeholder="Subject">
+          <textarea name="MESSAGE" placeholder="Message" required></textarea>
+
+          <div style="display:flex;gap:8px;align-items:center">
+            <button type="submit" class="btn primary">Send Message</button>
+            <div class="form-note muted" id="formStatus" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="flex:1;min-width:220px" class="card">
+            <strong>Email</strong><div class="muted">Amritkhanal091@gmail.com</div>
+          </div>
+          <div style="flex:1;min-width:220px" class="card">
+            <strong>Location</strong><div class="muted">Diktel, Khotang, Nepal</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="card center" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="muted">© <span id="year"></span> Amrit Khanal — Built with ❤️</div>
+      <div class="muted">Made with HTML • CSS • JS</div>
+    </footer>
+  </div>
+
+  <!-- Modal for project details -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="inner">
+      <button id="closeModal" style="float:right;background:transparent;border:0;font-size:18px;cursor:pointer"><i class="fa fa-times"></i></button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc" class="muted"></p>
+      <div style="margin-top:12px">
+        <button id="modalVisit" class="btn primary" style="display:none">Visit</button>
+      </div>
     </div>
+  </div>
 
-        <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about">
-                
-                <div class="about-content">
-                    <h4>About Me</h4>
-                    <ul>
-                      <li>In the vibrant tapestry of my life, I am Amrit Khanal, a dedicated +2 Computer Science student hailing from the charming town of Diktel in Khotang. My journey extends beyond the corridors of academia, with a passion for both the intricacies of coding and the exhilarating world of football, where my heart beats in sync with Real Madrid.
+  <!-- Floating actions -->
+  <div class="fab" aria-hidden="false">
+    <a href="mailto:Amritkhanal091@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+    <a id="whatsappQuick" href="https://wa.me/977" title="WhatsApp"><i class="fa fa-comment"></i></a>
+    <div class="backtop" id="backTop" title="Back to top"><i class="fa fa-arrow-up"></i></div>
+  </div>
 
-</li>
-                      <li>However, my story is not confined to codes and goals alone. Beyond the digital realm, I am fueled by a wanderlust that draws me to explore new horizons. Whether immersing myself in the cultural richness of local destinations or venturing into uncharted territories, the thrill of travel is an integral part of my journey.
-
- </li>
-                      <li> 
-
-As I navigate the ever-evolving landscape of technology, I find joy in unraveling coding challenges, showcasing not just technical proficiency but also a knack for elegant problem-solving. Beyond the screen, I actively engage in extracurricular activities and take on leadership roles, shaping a holistic experience that transcends the boundaries of my academic pursuits.
-
- </li>
-                    </ul>
-                </div>
-                                  
-                <div class="about-skills">
-                    <ul>
-                        <li>Name: Amrit Khanal</li>
-                        <li>Age: 19</li>     
-                        <li>From: Nepal</li>
-                        <li>Email: Amritkhanal091@gmail.com</li>
-                        <li>Province: Koshi Pradesh</li>
-                        <li>District: khotang</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-------------- Education & Internship -------------->
-    <section class="education-content" id="education">
-        <div class="container">
-            <div class="row">
-                <div class="education ">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        S.E.E
-                                    </h3>
-                                    <h4 class="timeline-title">Shree Saraswati Secondary Model School</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calander"></i> 2022
-                                    </h4>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">+2</h3>
-                                    <h4 class="timeline-title">Shikshadeep College</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2024
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Bachelor 
-                                    </h3>
-                                    <h4 class="timeline-title"> Acme Engineering College</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2025
-                                    </h4>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship">
-                    <h3 class="title">Hobbies/Interests</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Gaming
-                                    </h3>
-                                    <h4 class="timeline-title">Precision, Strategy, Adaptability, Mastery.</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> ¥¥¥
-                                    </h4>
-                                    <li class="timeline-text">
-Gaming is my odyssey through virtual landscapes, a canvas where victories are painted, defeats are learned from, and every click carries the thrill of exploration.
-
-
-                                    </li>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">Sports</h3>
-                                    <h4 class="timeline-title">Dribbling, accuracy, teamwork, strategy.</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> ¥¥¥
-                                    </h4>
-                                    <li class="timeline-text">
-In sports, the field is my arena of passion. Whether chasing a ball or sinking a shot, it's a celebration of teamwork, resilience, and the joy of pushing boundaries. Each game teaches profound lessons of dedication and unity.</li>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>My Skills</h4>
-                <p>Discover my skills</p>
-            </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                <div class="project">
-                    <i class="fa fa-football"></i>
-                    <h4>Football</h4>
-                    <p>Dribbling, Passing, Shooting, and Tactical awareness that players develop to excel on the field.</p>
-                </div>
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <i class="fa fa-camera"></i>
-                    <h4>Photography</h4>
-                    <p>Venturing into photography basics—learning framing, experimenting with perspectives, and capturing moments.</p>
-                </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Computer Science</h4>
-                    <p>I have got a basic understanding of C, HTML, CSS, and JavaScript. I am starting to explore more about C and looking into expanding my knowledge of javascript Considering frameworks like React or Vue for frontend development is on my radar. I am also looking to understand basic networking concepts like TCP/IP, protocols, and security. The plan is to keep practicing and learning</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-        <!-------------------------- Contact Me -------------------------->
-
-    <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me</h4>
-                <p>Get In Touch</p>
-            </div>
-            <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </section>
-    
-        <!-- typed.js -->
-
-  <script src="typed.min.js"></script>
-
-  <script type="text/javascript">
-
-    var typed = new Typed('.typing',{
-
-      strings: ["Strategic-Dynamo", "Enthusiastic-Dreamer", "Dynamic-Thinker"],
-
-      loop: true,
-
-      typeSpeed: 70,
-
-      backSpeed: 40
-
-    });
-
-  </script>
-
-
-    <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-    
-    <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message">Thanks for visiting!</small>
-    <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
-   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
